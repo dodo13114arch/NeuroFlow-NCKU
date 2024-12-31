@@ -23,7 +23,7 @@ Project Structure
 
 # Core technique on Knowledge base
 
-## Compas-Eve !!! 
+## Compas Eve !!! 
 
 How to use compas eve in brief.
 
@@ -37,15 +37,13 @@ How to intergrate llm into grasshopper through ollama, gh python.
 
 ### 參考資料 Reference 
 
-以下程式碼改寫自 *SerjoschDuering* 的內容
-
-[chatGPTinGrasshopper by SerjoschDuering](https://github.com/SerjoschDuering/chatGPTinGrasshopper)
+以下程式碼改寫自 [*SerjoschDuering*](https://github.com/SerjoschDuering/chatGPTinGrasshopper) 的內容
 
 [My Note](https://www.notion.so/Note-1027-14c57755feb98111bd7be8d9cb0b03bf?pvs=4#14c57755feb981a2803bd5256e9315ce)
 
 ### 
 
-### 操作流程
+### 操作流程  (Generate單一回復)
 
 1. 在Grasshopper Convas中創建一個GHPython Component
 2. 開啟編輯器並輸入以下程式碼 
@@ -74,7 +72,7 @@ How to intergrate llm into grasshopper through ollama, gh python.
     def call_ollama(prompt, model_name="llama3.2", max_tokens=800, retries=3, retry_delay=5):
         """呼叫 Ollama API 並回傳回應內容。"""
 
-        url = "http://localhost:11434/api/generate"
+        url = "http://localhost:11434/api/generate" #/api/chat 可聊天
 
         payload = {
             "model": model_name,
@@ -145,11 +143,19 @@ How to intergrate llm into grasshopper through ollama, gh python.
 
 [完整範例檔案](Ollama-in-Grasshopper/ollamaingh.gh)
 
+### 說明
+
+若要在gh內以聊天的狀態(有對話紀錄)調用LLM，可將url的地方改成 
+
+`url = "http://localhost:11434/api/chat" >`
+
 ### 延伸
 
-- 設置透過對話歷史文本，使每次調用的內容具有聊天記憶 [參考程式碼](Ollama-in-Grasshopper/ollamainghwithcsvhistory.py)
+- 設置透過對話歷史文本，使每次調用的內容具有聊天記憶(另存聊天紀錄csv) [參考程式碼](Ollama-in-Grasshopper/ollamainghwithcsvhistory.py)
+
 
 - 使用OPENAI API, 結合 StableDiffusion API 在 Grasshopper 內的工作流 [參考SerjoschDuering github 內容](https://github.com/SerjoschDuering/chatGPTinGrasshopper)
 
-
+- [ollama api 中文教學](https://ywctech.net/ml-ai/ollama-first-try/) by *YWC*
+- [ollama in python 教學](https://github.com/datawhalechina/handy-ollama/blob/main/docs/C4/1.%20Ollama%20API%20%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.md) by *Datawhale*
     
