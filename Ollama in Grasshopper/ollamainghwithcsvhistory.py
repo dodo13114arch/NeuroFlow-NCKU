@@ -1,3 +1,7 @@
+'''
+GHPython Component內容內容
+Ollama調用，包含對話歷史(另存於csv中)
+'''
 import json
 import csv
 import os  # 用來檢查檔案是否存在

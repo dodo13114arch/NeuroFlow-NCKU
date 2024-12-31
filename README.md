@@ -144,7 +144,7 @@ How to intergrate llm into grasshopper through ollama, gh python.
 
 ### 延伸
 
-- 設置透過對話歷史文本，使每次調用的內容具有聊天記憶 [參考程式碼](https://github.com/dodo13114arch/NeuroFlow-NCKU/blob/main/Ollama%20in%20Grasshopper/README.md)
+- 設置透過對話歷史文本，使每次調用的內容具有聊天記憶 [參考程式碼](https://github.com/dodo13114arch/NeuroFlow-NCKU/blob/main/Ollama%20in%20Grasshopper/ollamainghwithcsvhistory.py)
 
 - 結合 StableDiffusion API 在 Grasshopper 內的工作流 [參考網頁](https://github.com/SerjoschDuering/chatGPTinGrasshopper)
 
