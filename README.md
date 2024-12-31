@@ -33,7 +33,7 @@ How to use compas eve in brief.
 
 How to intergrate llm into grasshopper through ollama, gh python.
 
-簡單將本地端LLM透過API結合進Grasshopper環境。
+簡單將本地端LLM透過API結合進Grasshopper環境，在GH Canvas中透過ghpython component直接呼叫本地LLM 
 
 ### 參考資料 Reference 
 
@@ -45,7 +45,7 @@ How to intergrate llm into grasshopper through ollama, gh python.
 
 ### 
 
-### 調用ollama api方式
+### 操作流程
 
 1. 在Grasshopper Convas中創建一個GHPython Component
 2. 開啟編輯器並輸入以下程式碼 
@@ -137,16 +137,19 @@ How to intergrate llm into grasshopper through ollama, gh python.
 
     ```
 3. 設置Component輸入、輸出端名稱 ，以及資料格式
+![參考圖片](image/ollamainghcanvas.png)
         - 如image所示 
-        - 參考圖片1  (Canvas接法)
-        - 參考圖片2 (資料類型)
 4. 在Prompt輸入端Panel中輸入Prompt
+
+### 範例gh檔案
+
+[完整範例檔案](Ollama-in-Grasshopper/ollamaingh.gh)
 
 ### 延伸
 
-- 設置透過對話歷史文本，使每次調用的內容具有聊天記憶 [參考程式碼](https://github.com/dodo13114arch/NeuroFlow-NCKU/blob/main/Ollama%20in%20Grasshopper/ollamainghwithcsvhistory.py)
+- 設置透過對話歷史文本，使每次調用的內容具有聊天記憶 [參考程式碼](Ollama-in-Grasshopper/ollamainghwithcsvhistory.py)
 
-- 結合 StableDiffusion API 在 Grasshopper 內的工作流 [參考網頁](https://github.com/SerjoschDuering/chatGPTinGrasshopper)
+- 使用OPENAI API, 結合 StableDiffusion API 在 Grasshopper 內的工作流 [參考SerjoschDuering github 內容](https://github.com/SerjoschDuering/chatGPTinGrasshopper)
 
 
     
