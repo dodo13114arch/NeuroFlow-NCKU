@@ -42,7 +42,7 @@ How to intergrate llm into grasshopper through ollama, gh python.
 
 1. 在Grasshopper Convas中創建一個GHPython Component
 2. 開啟編輯器並輸入以下程式碼 
-    ```
+    ``` python
     """GHPython Component
     输入：
         prompt: 要傳給给 Ollama API 的用户提示
