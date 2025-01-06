@@ -20,9 +20,7 @@
     ```bash
     pip install compas numpy
     ```
-
-或直接參考 ` Environment.yml ` 配置
-
+    
 ## Step 2 - Python Setup
 
 1. 創建專案資料夾，範例建立在桌面

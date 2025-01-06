@@ -1,5 +1,5 @@
 '''
-GHPython Component內容內容
+GHPython Component內容
 Ollama調用，包含對話歷史(另存於csv中)
 '''
 import json
