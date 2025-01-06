@@ -3,9 +3,8 @@
 ## Overview
 
 在Grasshopper環境透過CompasRPC調用外部環境Python範例。
-可按照下列步驟進進行或直接下載[example files](#Example-Files)。
 
- 
+可按照下列步驟進行或者直接下載[範例檔案](#Example-Files)。
 
 ## Step 1 - Environment Setup
 
@@ -23,7 +22,6 @@
     ```
 
 或直接參考 ` Environment.yml ` 配置
-
 
 ## Step 2 - Python Setup
 
@@ -61,7 +59,6 @@
     Press CTRL+C to abort
     ```
 
-
 ## Step 4 - Grasshopper Setup
 
 1. 開啟Grasshopper，使用GHPython Component
@@ -93,11 +90,14 @@
 
 1. 下載整個[example_files](example_files)資料夾
 2. 把 ` CompasRPC ` 資料夾移到桌面
-3. 開啟 Anaconda
+3. 開啟 Anaconda，依序執行以下
     ```
     cd C:\Users\<USERNAME>\Desktop\CompasRPC 
     conda env create -f environment.yml
+    conda activate gh_rpc_env
+    python -m compas.rpc.services.default --port 1753
     ```
+4. 開啟Grasshopper，開啟範例gh檔 (` CompasRPCNumpyTest.gh `)
 
 ## Reference 
 
