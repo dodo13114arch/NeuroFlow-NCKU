@@ -2,7 +2,10 @@
 
 ## Overview
 
-在Grasshopper環境透過CompasRPC調用外部環境Python。
+在Grasshopper環境透過CompasRPC調用外部環境Python範例。
+可按照下列步驟進進行或直接下載[example files](#Example-Files)。
+
+ 
 
 ## Step 1 - Environment Setup
 
@@ -63,10 +66,10 @@
 
 1. 開啟Grasshopper，使用GHPython Component
 2. 撰寫Code
-    ```
+    ```python
     from compas.rpc import Proxy
     
-    p = Proxy('server') # server對應server.py名稱
+    p = Proxy('server')  #server對應python模組名稱
 
     array1 = [1, 2, 3]
     array2 = [4, 5, 6]
@@ -74,10 +77,32 @@
 
     a = result
     ```
-3. 點擊ghpython內的test 應顯示
+3. 點擊test 應顯示
     ```
-    Debug 訊息 .......
+    Reconnecting to an existing server proxy.
     ```
 
-    
-若沒遇到問題，
+4. 若以上皆沒問題，將ghpython的 ` a ` 輸出端連接上panel應該可看到` [5, 7, 9] `
+
+![參考圖片](image/ghrpc.png)
+
+
+## Example Files
+
+使用方式
+
+1. 下載整個[example_files](example_files)資料夾
+2. 把 ` CompasRPC ` 資料夾移到桌面
+3. 開啟 Anaconda
+    ```
+    cd C:\Users\<USERNAME>\Desktop\CompasRPC 
+    conda env create -f environment.yml
+    ```
+
+## Reference 
+
+[Official API Documentation](https://compas.dev/compas/latest/api/compas.rpc.html)
+
+### Further Information
+
+[compas_rpc_example *by yijiangh*](https://github.com/yijiangh/compas_rpc_example)
