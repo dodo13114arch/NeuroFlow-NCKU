@@ -68,9 +68,11 @@ Grasshopper環境內ghpython指令透過CompasEve於外部環境運算，避免G
 
 整體電池接法如下圖
 
-![CompasEveWorkFlow](image/CompasEveWorkFlow.png)
+![CompasEveDoSthWorkFlow](image/CompasEveDoSthWorkFlow.png)
 
 最終應該可看到在特定方框範圍內，一個一個隨機生成點。
+
+![CompasEveDoSth](image/CompasEveDoSth.png)
 
 ## Example Files
 
@@ -79,7 +81,11 @@ Grasshopper環境內ghpython指令透過CompasEve於外部環境運算，避免G
 1. 下載[example_files](example_files)資料夾
 2. 開啟Grasshopper，開啟範例gh檔 (` Compas-Eve-Example.gh `)
 
- ` Compas-Eve-Example.gh ` 內含其他應用範例 (Calculating VGA)
+` Compas-Eve-Example.gh ` 內含其他應用範例 (Calculating VGA)
+
+![CompasEveVGAWorkFlow](image/CompasEveVGAWorkFlow.png)
+
+![CompasEveVGA](image/CompasEveVGA.png)
 
 ## Reference 
 
