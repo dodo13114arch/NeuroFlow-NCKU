@@ -4,11 +4,11 @@
 
 Grasshopper環境內ghpython指令透過CompasEve於外部環境運算，避免Grasshopper因運算過於龐大卡死。
 
-
+環境配置可按照下列步驟進行，或參考 [environment.yml](example_files/environment.yml)
 
 ## Step 1 - Environment Setup
 
-1. Conda創建新環境、下載Compas Eve (v1.0.0)
+1. Conda創建新環境 *(範例命名: compaseve)*、下載Compas Eve (v1.0.0)
     ```
     conda create -n <project_name> -c conda-forge compas_eve
     ```
@@ -74,17 +74,12 @@ Grasshopper環境內ghpython指令透過CompasEve於外部環境運算，避免G
 
 ## Example Files
 
-使用方式
+### 範例檔案使用方式
 
-1. 
-2. 
-3. ...
+1. 下載[example_files](example_files)資料夾
+2. 開啟Grasshopper，開啟範例gh檔 (` Compas-Eve-Example.gh `)
 
-## Other Example (Calculating VGA)
-
-### 在 Grasshopper 中計算可見性圖 (Visibility Graph) 
-
-
+ ` Compas-Eve-Example.gh ` 內含其他應用範例 (Calculating VGA)
 
 ## Reference 
 
