@@ -136,7 +136,8 @@ How to intergrate llm into grasshopper through ollama, gh python.
     ```
 3. 設置Component輸入、輸出端名稱 ，以及資料格式
 ![參考圖片](image/ollamainghcanvas.png)
-        - 如image所示 
+如image所示 
+
 4. 在Prompt輸入端Panel中輸入Prompt
 
 ### 範例gh檔案
@@ -147,7 +148,7 @@ How to intergrate llm into grasshopper through ollama, gh python.
 
 若要在gh內以聊天的狀態(有對話紀錄)調用LLM，可將url的地方改成 
 
-`url = "http://localhost:11434/api/chat" >`
+`url = "http://localhost:11434/api/chat"`
 
 ### 延伸
 
