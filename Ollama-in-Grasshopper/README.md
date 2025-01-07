@@ -2,7 +2,9 @@
 
 How to intergrate llm into grasshopper through ollama, gh python.
 
-將Ollama本地端LLM透過API結合進Grasshopper環境，在Grasshopper中透過ghpython component直接呼叫
+將Ollama本地端LLM透過API結合進Grasshopper環境，在Grasshopper中透過ghpython component直接呼叫。
+
+以下操作使用 Windows 11, Rhino 7
 
 ### 參考資料 Reference 
 

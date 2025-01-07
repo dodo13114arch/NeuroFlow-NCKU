@@ -6,6 +6,8 @@
 
 可按照下列步驟進行或者直接下載[範例檔案](#Example-Files)。
 
+以下操作使用 Windows 11, Rhino 7 
+
 ## Step 1 - Environment Setup
 
 1. Miniconda中創建環境

@@ -6,6 +6,8 @@ Grasshopper環境內ghpython指令透過CompasEve於外部環境運算，避免G
 
 環境配置可按照下列步驟進行，或參考 [environment.yml](example_files/environment.yml)
 
+以下操作使用 Windows 11, Rhino 7 
+
 ## Step 1 - Environment Setup
 
 1. Conda創建新環境 *(範例命名: compaseve)*、下載Compas Eve (v1.0.0)
