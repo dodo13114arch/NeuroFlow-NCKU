@@ -1,10 +1,12 @@
 # NeuroFlow-NCKU
 
+![Cover](image/cover.png)
+
 ## Overview
 
 NeuroFlow 研究細節參考 [連結](https://app.rccn.dev/rcs2024f/neuroflow)
 
-本頁面著重紀錄研究過程中嘗試過的應用。
+研究過程中嘗試過的應用。
 
 ## Core technique on Knowledge base 
 
